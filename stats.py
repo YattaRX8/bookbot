@@ -7,14 +7,14 @@ def get_word_count(text):
 
 def get_char_dict(text):
     text = text.lower()
-    char_dict= {}
-    
+    char_dict= {}    
+
     for char in text:
         if char in char_dict:
             char_dict[char] += 1
         else:
-            char_dict[char] = 1
-            
+            char_dict[char] = 1    
+
     return char_dict
 
 def sort_on(items):
@@ -30,5 +30,3 @@ def sort_dict(dict):
     char_dict_list.sort(reverse=True, key=sort_on)
 
     return char_dict_list
-
-
